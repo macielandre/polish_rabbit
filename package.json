@@ -1,0 +1,24 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "Lib for rabbitmq queues implementation in Node Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macielandre/rabbitmq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macielandre/rabbitmq/issues"
+  },
+  "homepage": "https://github.com/macielandre/rabbitmq#readme",
+  "dependencies": {
+    "amqplib": "^0.10.2",
+    "nodemon": "^2.0.19"
+  }
+}
