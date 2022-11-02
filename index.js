@@ -1,5 +1,3 @@
-module.exports = { 
-    Connection: require('./lib/connection'),
-    Channel: require('./lib/channel'),
-    ConfirmChanell: require('./lib/confirmChannel')
-}
+export * from './lib/connection'
+export * from './lib/channel'
+export * from './lib/confirmChannel'

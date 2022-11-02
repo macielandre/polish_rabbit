@@ -22,3 +22,11 @@ services:
       - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
 
 docker compose up
+
+dequeue example:
+
+```js
+for await (const message of await client.dequeue()) {
+  console.log(message)
+}
+```
