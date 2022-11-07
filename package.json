@@ -1,5 +1,5 @@
 {
-  "name": "@maciel.andre/rabbitmq",
+  "name": "polish_rabbit",
   "version": "1.0.0",
   "description": "Lib for rabbitmq queues implementation in Node Js",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/macielandre/rabbitmq.git"
+    "url": "https://github.com/macielandre/polish_rabbit.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/macielandre/rabbitmq/issues"
+    "url": "https://github.com/macielandre/polish_rabbit/issues"
   },
-  "homepage": "https://github.com/macielandre/rabbitmq#readme",
+  "homepage": "https://github.com/macielandre/polish_rabbit#readme",
   "dependencies": {
     "amqplib": "^0.10.2",
     "nodemon": "^2.0.19"
