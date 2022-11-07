@@ -19,12 +19,13 @@
   },
   "homepage": "https://github.com/macielandre/polish_rabbit#readme",
   "dependencies": {
-    "amqplib": "^0.10.2",
-    "nodemon": "^2.0.19"
+    "amqplib": "^0.10.2"
   },
   "type": "module",
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
