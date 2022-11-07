@@ -4,13 +4,13 @@ Simple package to handle with rabbitmq connection and channels with [amqplib](ht
 
 ## Features
 
-[x] Connect to host
-[x] Close connection
-[x] Create channel
-[x] Send messages to queues
-[x] Consume messages from queues
-[x] Delete queues
-[x] Purge queues
+- [x] Connect to host
+- [x] Close connection
+- [x] Create channel
+- [x] Send messages to queues
+- [x] Consume messages from queues
+- [x] Delete queues
+- [x] Purge queues
 
 > Consuming messages
 
