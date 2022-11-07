@@ -1,5 +1,5 @@
 {
-  "name": "rabbitmq",
+  "name": "@maciel.andre/rabbitmq",
   "version": "1.0.0",
   "description": "Lib for rabbitmq queues implementation in Node Js",
   "main": "index.js",
@@ -22,5 +22,9 @@
     "amqplib": "^0.10.2",
     "nodemon": "^2.0.19"
   },
-  "type": "module"
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }

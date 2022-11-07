@@ -1,32 +1,49 @@
-# rabbitmq
-Lib for rabbitmq queues implementation in Node Js
+# Polish Rabbit
+## Description
+Simple package to handle with rabbitmq connection and channels with [amqplib](https://www.npmjs.com/package/amqplib) abstraction.
 
-Uri example: amqp://guest:guest@localhost:5672
+## Features
 
-Running rabbitmq
+[x] Connect to host
+[x] Close connection
+[x] Create channel
+[x] Send messages to queues
+[x] Consume messages from queues
+[x] Delete queues
+[x] Purge queues
 
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management
+> Consuming messages
 
-or
-
-version: "3.2"
-services: 
-  rabbitmq:
-    image: rabbitmq:3-management-alpine
-    container_name: 'rabbitmq'
-    ports:
-      - 5672:5672
-      - 15672:15672
-    volumes:
-      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
-
-docker compose up
-
-dequeue example:
+Client.dequeue(options)
 
 ```js
-for await (const message of await client.dequeue()) {
-  console.log(message)
+import Channel from './lib/channel.js'
+
+const cli = new Channel({ uri: 'amqp://guest:guest@localhost:5672', queue: 'your_queue' })
+
+async function get() {
+    await cli.createChannel()
+
+    for await (const message of await cli.dequeue()) {
+        console.log(message)
+    }
 }
+
+get()
+```
+
+> Publishing messages:
+
+```js
+import Channel from './lib/channel.js'
+
+const cli = new Channel({ uri: 'amqp://guest:guest@localhost:5672', queue: 'your_queue' })
+
+async function send() {
+    await cli.createChannel()
+
+    cli.enqueue('your_string_message')
+}
+
+send()
 ```
