@@ -4,13 +4,17 @@ Simple package to handle with rabbitmq connection and channels with [amqplib](ht
 
 ## Features
 
-- [x] Connect to host
-- [x] Close connection
-- [x] Create channel
-- [x] Send messages to queues
-- [x] Consume messages from queues
-- [x] Delete queues
-- [x] Purge queues
+> Connect to host
+> Close connection
+> Create channel
+> Send messages to queues
+> Consume messages from queues
+> Delete queues
+> Purge queues
+
+## Runnig Rabbitmq instance
+
+```docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management```
 
 > Consuming messages
 

@@ -1,3 +1,7 @@
-export * from './lib/connection'
-export * from './lib/channel'
-export * from './lib/confirmChannel'
+import Connection from './lib/connection.js'
+import Channel from './lib/channel.js'
+
+export {
+    Connection,
+    Channel
+}
