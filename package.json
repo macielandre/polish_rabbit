@@ -1,6 +1,6 @@
 {
   "name": "polish_rabbit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lib for rabbitmq queues implementation in Node Js",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,6 @@
   "dependencies": {
     "amqplib": "^0.10.2"
   },
-  "type": "module",
   "directories": {
     "lib": "lib"
   },
