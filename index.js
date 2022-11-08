@@ -1,7 +1,7 @@
-import Connection from './lib/connection.js'
-import Channel from './lib/channel.js'
+const Connection = require('./lib/connection')
+const Channel = require('./lib/channel')
 
-export {
+module.exports = {
     Connection,
     Channel
 }
