@@ -4,6 +4,7 @@
   "description": "Lib for rabbitmq queues implementation in Node Js",
   "main": "index.js",
   "scripts": {
+    "rabbitmq": "docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management",
     "test": "jest index.js",
     "dev": "nodemon index.js"
   },
@@ -20,16 +21,18 @@
   "homepage": "https://github.com/macielandre/polish_rabbit#readme",
   "dependencies": {
     "amqplib": "^0.10.2",
-    "log4js": "^6.9.1"
+    "dotenv": "^16.3.1",
+    "log4js": "^6.9.1",
+    "piscina": "^4.0.0"
   },
   "directories": {
     "lib": "lib"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
     "prettier": "^2.8.8"
   }
 }
